@@ -17,7 +17,7 @@ flowchart TD
 - **GitHub** — free
 - **Cloudflare** — free (hosting, SSL, DNS all included)
 - **Domain name** — ~$10–15/year
-- **Claude Pro** — $20/month
+- **Claude Pro** — $20/month (only needed when building or updating, not to keep the site running)
 
 ## Setup
 

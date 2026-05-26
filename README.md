@@ -85,14 +85,17 @@ environment, no terminal, no code editor required.
 1. **Claude Pro subscription** — A Claude Pro account is required to access
    Claude on the web.
 
-2. **Launch a Claude session** — Go to claude.ai/code and start a new
-   session connected to this GitHub repo. Claude will have read and write
-   access to the codebase.
+2. **Design with Claude** — Use Claude Design to create your site's look and
+   feel. Describe your style, content, and goals and Claude will produce
+   design files you can use as the blueprint for the build.
 
-3. **Describe what you want** — Tell Claude what to build or change in plain
-   language. Claude will edit the files, commit, and push to `main`.
-   Cloudflare picks up the push and deploys automatically. You do not need
-   to run any commands locally.
+3. **Initial build** — Launch a Claude Code session connected to this repo and
+   share the design files. Claude will build out the initial site — pages,
+   styles, and content — and push to `main`. Cloudflare deploys automatically.
+
+4. **Iterate** — Continue prompting Claude to add pages, update content, tweak
+   the design, or add new features. Each change is committed and live within
+   seconds.
 
 ## Sample prompts
 

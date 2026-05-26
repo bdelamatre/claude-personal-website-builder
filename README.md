@@ -2,6 +2,16 @@
 
 Vibe build your personal website using Claude and host it for free on Cloudflare Workers. See `CLAUDE.md` for architecture and development notes.
 
+## How it works
+
+```mermaid
+flowchart LR
+    A([You]) -->|prompt| B[Claude\nclaude.ai/code]
+    B -->|commit & push to main| C[(GitHub)]
+    C -->|auto-deploy| D[Cloudflare Workers]
+    D -->|serve from edge| E([your-domain.com])
+```
+
 ## Setup
 
 These steps are one-time and done in the Cloudflare dashboard and GitHub.

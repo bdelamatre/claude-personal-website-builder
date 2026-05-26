@@ -1,7 +1,6 @@
 # Personal Website
 
-A personal site built on Cloudflare Workers. See `CLAUDE.md` for architecture
-and development notes.
+Vibe build your personal website using Claude Code on the web and host it for free on Cloudflare Workers. See `CLAUDE.md` for architecture and development notes.
 
 ## Setup
 

@@ -77,10 +77,10 @@ architecture works. To use it for a new site:
 This isn't required, but it's recommended. You can also construct your own
 `CLAUDE.md` tailored to your setup, or start without one entirely.
 
-## Making changes
+## Building your site
 
-This site is built and maintained by prompting Claude directly — no local
-development environment required.
+Your site is built entirely by prompting Claude — no local development
+environment, no terminal, no code editor required.
 
 1. **Claude Pro subscription** — A Claude Pro account is required to access
    Claude on the web.
@@ -89,7 +89,7 @@ development environment required.
    session connected to this GitHub repo. Claude will have read and write
    access to the codebase.
 
-3. **Prompt Claude to make changes** — Describe what you want in plain
+3. **Describe what you want** — Tell Claude what to build or change in plain
    language. Claude will edit the files, commit, and push to `main`.
    Cloudflare picks up the push and deploys automatically. You do not need
    to run any commands locally.

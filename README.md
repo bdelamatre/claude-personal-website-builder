@@ -49,7 +49,7 @@ This isn't required, but it's recommended. You can also just start a session and
 
 Your site is built entirely by prompting Claude — no terminal, no code editor required.
 
-1. **Claude Pro subscription ($20/month)** — Required to use Claude on the web. This is the one ongoing cost.
+1. **Claude Pro subscription ($20/month)** — Required to use Claude on the web. You only need this when building or updating your site — not to keep it running.
 
 2. **Design with Claude** — Use Claude Design to create your site's look and feel. Describe your style, content, and goals and Claude will produce a design you can use as the blueprint for the build.
 

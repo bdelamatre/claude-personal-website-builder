@@ -12,8 +12,8 @@ These steps are one-time and done in the Cloudflare dashboard and GitHub.
 2. **Cloudflare account** — Sign up at cloudflare.com (free tier is
    sufficient).
 
-3. **Domain** — Register a domain through Cloudflare Registrar, or transfer
-   an existing domain and point its nameservers to Cloudflare. The domain
+3. **Domain** — Add your domain to Cloudflare by copying your existing DNS
+   records and updating your nameservers to point to Cloudflare. The domain
    must be on Cloudflare's DNS for Workers routing to work.
 
 4. **Create a Worker** — In the Cloudflare dashboard go to **Workers & Pages

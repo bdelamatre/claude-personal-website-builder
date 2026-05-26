@@ -14,13 +14,13 @@ flowchart TD
 
 ## Setup
 
-These steps are one-time and done in the Cloudflare dashboard and GitHub.
+These steps are one-time and done in the Cloudflare dashboard and GitHub. GitHub and Cloudflare Workers are both free — the only cost is your domain name (typically $10–15/year).
 
-1. **GitHub** — Create a repo. This is the source of truth for all code and
+1. **GitHub** — Create a free repo. This is the source of truth for all code and
    content.
 
-2. **Cloudflare account** — Sign up at cloudflare.com (free tier is
-   sufficient).
+2. **Cloudflare account** — Sign up at cloudflare.com. The free tier is all
+   you need — Workers, DNS, and SSL are included at no cost.
 
 3. **Domain** — Add your domain to Cloudflare by copying your existing DNS
    records and updating your nameservers to point to Cloudflare. The domain

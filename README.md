@@ -52,7 +52,7 @@ These steps are one-time and done in the Cloudflare dashboard and GitHub.
 
    Blocked requests appear in Security Events, not worker invocation logs.
 
-## Using this template
+## CLAUDE.md
 
 `CLAUDE.md` is a reusable instruction file that tells Claude how this
 architecture works. To use it for a new site:
@@ -63,6 +63,9 @@ architecture works. To use it for a new site:
    of `CLAUDE.md` for what to include.
 3. Start a Claude session and Claude will follow the instructions in
    `CLAUDE.md` automatically.
+
+This isn't required, but it's recommended. You can also construct your own
+`CLAUDE.md` tailored to your setup, or start without one entirely.
 
 ## Making changes
 

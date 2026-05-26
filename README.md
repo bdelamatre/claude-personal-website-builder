@@ -1,4 +1,4 @@
-# Personal Website
+# Build Your Personal Site with Claude
 
 Vibe build your personal website using Claude and host it for free on Cloudflare Workers. See `CLAUDE.md` for architecture and development notes.
 

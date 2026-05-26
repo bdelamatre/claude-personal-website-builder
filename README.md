@@ -1,6 +1,6 @@
 # Personal Website
 
-Vibe build your personal website using Claude Code on the web and host it for free on Cloudflare Workers. See `CLAUDE.md` for architecture and development notes.
+Vibe build your personal website using Claude and host it for free on Cloudflare Workers. See `CLAUDE.md` for architecture and development notes.
 
 ## Setup
 
@@ -61,7 +61,7 @@ architecture works. To use it for a new site:
 2. Add a `NOTES.md` with your project-specific notes (design, features,
    special components) — see the **Project specifics** section at the bottom
    of `CLAUDE.md` for what to include.
-3. Start a Claude Code session and Claude will follow the instructions in
+3. Start a Claude session and Claude will follow the instructions in
    `CLAUDE.md` automatically.
 
 ## Making changes
@@ -70,9 +70,9 @@ This site is built and maintained by prompting Claude directly — no local
 development environment required.
 
 1. **Claude Pro subscription** — A Claude Pro account is required to access
-   Claude Code on the web.
+   Claude on the web.
 
-2. **Launch a Claude Code session** — Go to claude.ai/code and start a new
+2. **Launch a Claude session** — Go to claude.ai/code and start a new
    session connected to this GitHub repo. Claude will have read and write
    access to the codebase.
 

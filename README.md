@@ -82,8 +82,8 @@ This isn't required, but it's recommended. You can also construct your own
 Your site is built entirely by prompting Claude — no local development
 environment, no terminal, no code editor required.
 
-1. **Claude Pro subscription** — A Claude Pro account is required to access
-   Claude on the web.
+1. **Claude Pro subscription ($20/month)** — A Claude Pro account is required
+   to access Claude on the web. This is the one ongoing cost of running your site.
 
 2. **Design with Claude** — Use Claude Design to create your site's look and
    feel. Describe your style, content, and goals and Claude will produce

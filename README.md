@@ -99,8 +99,23 @@ environment, no terminal, no code editor required.
 
 ## Sample prompts
 
-These examples show the kinds of things you can ask Claude to do once your
-site is set up.
+### Claude Design
+
+Use these when designing your site's look and feel before the initial build.
+
+**Visual style**
+- "A minimal personal site for a writer. Neutral tones, generous whitespace, serif headings, monospace body text."
+- "Clean and modern with a dark background, accent color in teal, and a grid-based layout."
+- "Warm and personal — like a notebook. Off-white background, handwritten-style headings, soft shadows."
+
+**Layout and structure**
+- "Homepage with a short bio, a list of recent writing, and links to a few projects."
+- "A single-page site with sections for about, work, and contact."
+- "Minimal homepage that leads into a /now page and a /curations page."
+
+### Claude Code
+
+Use these in a Claude Code session to build and update your site.
 
 **Adding content**
 - "Add a now entry: just got back from a week in the mountains."

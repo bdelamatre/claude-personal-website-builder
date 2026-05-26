@@ -1,6 +1,8 @@
 # Build Your Personal Site with Claude
 
-Vibe build your personal website using Claude and host it for free on Cloudflare Workers. See `CLAUDE.md` for architecture and development notes.
+Build and ship a personal website by describing what you want in plain language — no coding required. This is vibe coding: instead of writing code yourself, you prompt Claude to design, build, and update your site for you. Claude handles the files, commits, and deployment while you focus on what you want to say and how you want it to look.
+
+Designed for writers, creators, and professionals who want a fast, good-looking personal site without learning web development. Hosted for free on Cloudflare Workers. See `CLAUDE.md` for architecture and development notes.
 
 ## How it works
 

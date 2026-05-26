@@ -28,11 +28,11 @@ These steps are one-time and done in the Cloudflare dashboard and GitHub.
    `www.example.com`). Cloudflare automatically provisions an SSL certificate
    and routes traffic.
 
-7. **Disable the workers.dev subdomain** — Under **Settings → Domains &
+7. **Disable the workers.dev subdomain** *(optional)* — Under **Settings → Domains &
    Routes**, disable the `*.workers.dev` URL. Also set `workers_dev: false`
    in `wrangler.jsonc` so deploys don't re-enable it.
 
-8. **WAF rule** — In the Cloudflare dashboard go to **Security → WAF →
+8. **WAF rule** *(optional)* — In the Cloudflare dashboard go to **Security → WAF →
    Custom rules** and create a rule (action: Managed Challenge) to suppress
    bot scanner noise before it reaches the worker:
 

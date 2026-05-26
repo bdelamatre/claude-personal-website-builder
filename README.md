@@ -1,4 +1,4 @@
-# Build Your Personal Site with Claude
+# Build Your Personal Site with Vibes
 
 Build and ship a personal website by describing what you want in plain language — no coding required. This is vibe coding: instead of writing code yourself, you prompt Claude to design, build, and update your site for you. Claude handles the files, commits, and deployment while you focus on what you want to say and how you want it to look. Hosted for free on Cloudflare Workers.
 

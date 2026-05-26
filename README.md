@@ -5,8 +5,8 @@ Build and ship a personal website by describing what you want in plain language 
 ## How it works
 
 ```mermaid
-flowchart LR
-    A([You]) -->|prompt| B[Claude\nclaude.ai/code]
+flowchart TD
+    A([You]) -->|describe what you want| B[Claude\nclaude.ai/code]
     B -->|commit & push to main| C[(GitHub)]
     C -->|auto-deploy| D[Cloudflare Workers]
     D -->|serve from edge| E([your-domain.com])

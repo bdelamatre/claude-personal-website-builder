@@ -287,6 +287,13 @@ Apply these automatically whenever adding or updating a page — do not wait to 
 4. Add the URL to `sitemap.xml`.
 5. Update `llms.txt`.
 
+## 404 page
+
+`pages/not-found.js` handles all unmatched routes (see routing pattern above).
+It must always exist and must include a link back to the homepage (`/`). Keep
+it simple: a short message and a "Go home" link styled to match the site.
+Return a 404 status code — do not return 200 for missing pages.
+
 ## Editing gotchas
 
 - Template literals in `pages/*.js` are indentation-sensitive — preserve

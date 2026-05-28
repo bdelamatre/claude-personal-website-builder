@@ -1,29 +1,45 @@
+<div align="center">
+
 # Build Your Personal Site with Vibes
 
-Build and ship a personal website by describing what you want in plain language — no coding required. This is vibe coding: instead of writing code yourself, you prompt Claude to design, build, and update your site for you. Claude handles the files, commits, and deployment while you focus on what you want to say and how you want it to look. Hosted for free on Cloudflare Workers.
+Describe what you want. Claude builds and ships it. No coding required.
 
-**Example:** [delamatre.com](https://www.delamatre.com)
+[![Cloudflare Workers](https://img.shields.io/badge/Cloudflare_Workers-free-F38020?logo=cloudflare&logoColor=white)](https://workers.cloudflare.com)
+[![GitHub](https://img.shields.io/badge/GitHub-free-181717?logo=github&logoColor=white)](https://github.com)
+[![Claude](https://img.shields.io/badge/Claude-AI--powered-7C3AED)](https://claude.ai/code)
+
+**Live example → [delamatre.com](https://www.delamatre.com)**
+
+</div>
+
+---
+
+This is vibe coding: instead of writing code yourself, you prompt Claude to design, build, and update your site. Claude handles the files, commits, and deployment while you focus on what you want to say and how you want it to look.
 
 ## How it works
 
 ```mermaid
-flowchart TD
+flowchart LR
     A([You]) -->|describe what you want| B[Claude\nclaude.ai/code]
     B -->|saves changes| C[(GitHub)]
-    C -->|publishes automatically| D[Cloudflare Workers]
+    C -->|auto-deploys| D[Cloudflare Workers]
     D -->|delivers| E([your-domain.com])
 ```
 
 ## What it costs
 
-- **GitHub** — free
-- **Cloudflare** — free (hosting, SSL, DNS all included)
-- **Domain name** — ~$10–15/year
-- **Claude Pro** — $20/month (only needed when building or updating, not to keep the site running)
+| Service | Cost | Notes |
+|---|---|---|
+| GitHub | Free | Where your site's files live |
+| Cloudflare | Free | Hosting, SSL, and DNS included |
+| Domain name | ~$10–15/year | The only real expense |
+| Claude Pro | $20/month | Only needed when building or updating — not to keep the site running |
+
+---
 
 ## Setup
 
-These are one-time steps. GitHub and Cloudflare are both free to sign up for.
+One-time steps. Both GitHub and Cloudflare are free to sign up for.
 
 1. **GitHub account** — Create a free account at github.com and make a new repo. This is where your site's files live.
 
@@ -41,6 +57,8 @@ These are one-time steps. GitHub and Cloudflare are both free to sign up for.
 
 8. **Add a security rule** *(optional)* — Ask Claude to set up a WAF rule in Cloudflare to block common bot traffic.
 
+---
+
 ## Building your site
 
 Your site is built entirely by prompting Claude — no terminal, no code editor required.
@@ -55,42 +73,55 @@ Your site is built entirely by prompting Claude — no terminal, no code editor 
 
 5. **Iterate** — Keep prompting Claude to add pages, update content, or tweak the design. Changes go live in seconds.
 
+---
+
 ## Sample prompts
 
-### Claude Design
+### Design
 
-Use these to design your site before the initial build.
+Use these with Claude Design before the initial build.
 
-**Visual style**
-- "A minimal personal site for a writer. Neutral tones, generous whitespace, serif headings, monospace body text."
-- "Clean and modern with a dark background, accent color in teal, and a grid-based layout."
-- "Warm and personal — like a notebook. Off-white background, handwritten-style headings, soft shadows."
+| Goal | Prompt |
+|---|---|
+| Minimal writer's site | *"A minimal personal site for a writer. Neutral tones, generous whitespace, serif headings, monospace body text."* |
+| Dark modern | *"Clean and modern with a dark background, accent color in teal, and a grid-based layout."* |
+| Warm personal | *"Warm and personal — like a notebook. Off-white background, handwritten-style headings, soft shadows."* |
+| Simple homepage | *"Homepage with a short bio, a list of recent writing, and links to a few projects."* |
+| Single page | *"A single-page site with sections for about, work, and contact."* |
 
-**Layout and structure**
-- "Homepage with a short bio, a list of recent writing, and links to a few projects."
-- "A single-page site with sections for about, work, and contact."
-- "Minimal homepage that leads into a /now page and a /curations page."
+### Build & update
 
-### Claude Code
-
-Use these in a Claude session to build and update your site.
+Use these in a Claude Code session.
 
 **Adding content**
-- "Add a now entry: just got back from a week in the mountains."
-- "Add a new curations category called 'Books' with a first item: Thinking in Systems by Donella Meadows, a classic introduction to systems thinking."
-- "Update my bio in the about page to mention I moved to Portland."
+```
+Add a now entry: just got back from a week in the mountains.
+```
+```
+Add a new curations category called 'Books' with a first item: Thinking in Systems by Donella Meadows, a classic introduction to systems thinking.
+```
+```
+Update my bio in the about page to mention I moved to Portland.
+```
 
 **Building new pages**
-- "Add a /now page that shows a reverse-chronological list of short status updates."
-- "Create a /curations page with categories. Each category links to its own page listing items with titles, links, and descriptions."
-- "Add a /uses page listing the hardware and software I use daily."
-
-**Design and layout**
-- "The homepage feels too sparse — add a subtle animated illustration."
-- "Make the type on the curations pages larger and increase line spacing for readability."
-- "Add a dark/light mode toggle that persists across sessions."
+```
+Add a /now page that shows a reverse-chronological list of short status updates.
+```
+```
+Create a /curations page with categories. Each category links to its own page listing items with titles, links, and descriptions.
+```
+```
+Add a /uses page listing the hardware and software I use daily.
+```
 
 **Features**
-- "Pull live tide data from NOAA for my local gauge and display it on the homepage."
-- "Show current weather conditions — temperature and a short description."
-- "Add a /feed.xml RSS feed for my now entries."
+```
+Pull live tide data from NOAA for my local gauge and display it on the homepage.
+```
+```
+Add a dark/light mode toggle that persists across sessions.
+```
+```
+Add a /feed.xml RSS feed for my now entries.
+```

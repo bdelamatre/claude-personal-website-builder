@@ -157,9 +157,10 @@ When making changes, check whether any of these files need updating:
 
 | Change | Files to update |
 |---|---|
-| Add or remove a page | `sitemap.xml`, `llms.txt` |
+| Add or remove a page | `sitemap.xml`, `llms.txt`, OG/Twitter tags on the new page |
 | Update page content | `sitemap.xml` (`lastmod`), `llms.txt` |
 | Change bio or contact | `llms.txt`, `.well-known/security.txt` |
+| Add or update a social preview image | `og:image` and `twitter:image` on affected pages |
 | Add external `fetch()` call | `CSP` (`connect-src`) in `worker.js` |
 | New page uses external font | `CSP` (`font-src`, `style-src`) |
 | Year rolls over | `.well-known/security.txt` (`Expires`) |
@@ -227,6 +228,19 @@ Also applied: `X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY`,
   `<link rel="stylesheet">` — required when using monospace fonts to prevent
   fallback serif rendering before the font loads (very visible with monospace).
 
+## Performance
+
+Apply these automatically — do not wait to be asked.
+
+- `<meta name="viewport" content="width=device-width, initial-scale=1">` must
+  be present on every page.
+- Images should be served in WebP format where possible. Always include explicit
+  `width` and `height` attributes to prevent layout shift (CLS).
+- Use `loading="lazy"` on below-fold images. Never lazy-load the first visible
+  image — it delays LCP.
+- No render-blocking scripts. Use `defer` or `async` on all `<script>` tags
+  that are not critical to first render.
+
 ## Design and quality bar
 
 Apply these standards to every change involving HTML, CSS, or layout — do not wait to be asked.
@@ -260,7 +274,13 @@ Apply these automatically whenever adding or updating a page — do not wait to 
 - `<title>` — descriptive, unique per page, ideally under 60 characters
 - `<meta name="description">` — 1–2 sentence summary, under 160 characters
 - `<link rel="canonical">` — the page's own absolute URL (with `www`)
-- Open Graph tags: `og:title`, `og:description`, `og:url`, `og:type`
+- Open Graph tags: `og:title`, `og:description`, `og:url`, `og:type`,
+  `og:image` (absolute URL, 1200×630px), `og:image:alt`
+- Twitter/X card tags: `twitter:card` (`summary_large_image`), `twitter:title`,
+  `twitter:description`, `twitter:image`
+
+If no page-specific image exists, fall back to a default at a known static path
+(e.g. `/og-default.png`) rather than omitting the tag.
 
 **Structured data (JSON-LD):**
 - Homepage: `Person` or `WebSite` schema
@@ -275,7 +295,9 @@ Apply these automatically whenever adding or updating a page — do not wait to 
 - Link text should be descriptive — not "click here" or "read more"
 
 **AI crawlers:**
-- Update `llms.txt` whenever page content or structure changes meaningfully
+- Update `llms.txt` whenever page content or structure changes meaningfully.
+  Each page entry should include a one-sentence description so LLM crawlers
+  get useful context, not just a URL.
 - Keep `robots.txt` permissive — don't accidentally block legitimate crawlers
 
 **Sitemap:**

@@ -1,0 +1,13 @@
+# Your Name
+
+> One-line description of you and your site.
+
+A brief paragraph about who you are and what you do.
+
+## Pages
+
+- [Home](https://www.example.com/) — Homepage with bio and links.
+
+## Links
+
+- [Website](https://www.example.com/)

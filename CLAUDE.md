@@ -44,6 +44,11 @@ about what to add, change, or remove.
 - **Free to run** — Cloudflare Workers free tier is sufficient. Keep the
   architecture within those limits.
 
+- **Perfect PageSpeed score** — every page should score 100 in Performance,
+  Accessibility, Best Practices, and SEO in Google PageSpeed Insights. Treat
+  any score below 100 as a bug. Use the audit results to guide fixes rather
+  than working around them.
+
 ## Deployment
 
 **Push to `main` → site is live. There is no separate deploy step.**

@@ -94,10 +94,12 @@ bare domain/*       → 301 www
 These files must exist in the repo root. Generate them if missing — do not
 leave them absent.
 
-**`robots.txt`** — controls crawler access:
+**`robots.txt`** — controls crawler access. Disallow `/.well-known/` so security.txt
+is not indexed by search engines:
 ```
 User-agent: *
 Allow: /
+Disallow: /.well-known/
 Sitemap: https://www.example.com/sitemap.xml
 ```
 
@@ -141,7 +143,9 @@ Expires: YYYY-MM-DDT00:00:00Z
 Preferred-Languages: en
 ```
 Update `Expires` annually. The worker should redirect `/security.txt` →
-`/.well-known/security.txt`.
+`/.well-known/security.txt`. Do not add this path to `sitemap.xml` — it is a
+machine-readable file, not a page for search engines. The `robots.txt` disallow
+rule for `/.well-known/` keeps it out of search indexes.
 
 **`favicon.ico`** — a real `.ico` file (not just `.svg`) so that browser
 requests for `/favicon.ico` are served by the asset layer without invoking

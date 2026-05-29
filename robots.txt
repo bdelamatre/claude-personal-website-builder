@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /.well-known/
-Sitemap: https://www.example.com/sitemap.xml
